@@ -1,3 +1,7 @@
+# Introduction
+
+As part of our externship project for the **Bioinformatics faculty at the University of Applied Sciences Leiden**, we were required to review and reproduce Figures 2 and 4 from the document [Biologically informed deep learning to query gene programs in single-cell atlases](https://www.nature.com/articles/s41556-022-01072-x). This led to some issues that needed to be resolved due to the outdated scripts (after all, the code was written back in 2020).
+
 # expiMap reproducibility
 
 Immune healthy atlas  
