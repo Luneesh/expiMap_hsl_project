@@ -7,26 +7,35 @@ In the process of trying to understand how the scripts work, we discovered sever
 
 As of 12.11.2024, we have found the following method to set up the required environment; the instructions below are specifically written for `wheel`:
 
-1. ```bash
+
+1. Torch installation
+```bash
    pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
    ```
+**For GPU supporting CUDA**
+```bash
+pip install torch==1.8.0+cpu torchvision==0.9.0+cpu torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
+```
+**For CPU**
 
-2. ```bash
-   pip install -r requirements.txt --no-dependencies
-   ```
+2. Site-Packages 
+```bash
+pip install -r requirements.txt --no-dependencies
+```
 
-3. ```bash
-   pip install pytorch-lightning==1.3.8
-   ```
+```bash
+pip install pytorch-lightning==1.3.8
+```
 
-4. ```bash
+```bash
    pip install fsspec==2021.11.0
    ```
 
-5. ```bash
-    pip install <pathway> --no-dependencies
-    ```
- Download the `scarches-soft_new_mask` package from the provided link and install it. However, due to an error, don’t forget to note in Git that during installation, the path `./scarches-soft_new_mask/scarches/trainers/scgen` is missing. This results in an initialization error due to the incomplete package—`./trainers/scgen` is missing. You’ll need to manually add it to the root.
+5. scArches 
+```bash
+pip install <pathway> --no-dependencies
+```
+Download the `scarches-soft_new_mask` package from the provided link and install it. However, due to an error, don’t forget to note in Git that during installation, the path `./scarches-soft_new_mask/scarches/trainers/scgen` is missing. This results in an initialization error due to the incomplete package—`./trainers/scgen` is missing. You’ll need to manually add it to the root.
 
 
 
